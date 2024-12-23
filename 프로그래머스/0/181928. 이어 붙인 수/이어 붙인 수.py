@@ -1,12 +1,10 @@
 def solution(num_list):
-    a = []
-    b = []
+    a = ""
+    b = ""
     for i in num_list:
         if i%2==0:
-            a.append(i)
+            a += str(i)
         else:
-            b.append(i)
-    a_int = int(''.join(map(str, a)))
-    b_int = int(''.join(map(str, b)))
-    answer = a_int + b_int
+            b += str(i)
+    answer = int(a) + int(b)
     return answer
