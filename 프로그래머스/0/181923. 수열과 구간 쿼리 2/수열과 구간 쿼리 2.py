@@ -1,11 +1,8 @@
 def solution(arr, queries):
     answer = []
     for s, e, k in queries:
-        s_list = arr[s:e+1]
-        k_list = []
-        for num in s_list:
-            if num > k:
-                k_list.append(num)
+        slicing_list = arr[s:e+1]
+        k_list = [num for num in slicing_list if num > k]
         if k_list:
             answer.append(min(k_list))
         else:
