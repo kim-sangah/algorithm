@@ -1,6 +1,5 @@
 def solution(n, k):
     answer = []
-    m = n//k
-    for i in range(1, m+1):
-        answer.append(k*i)
+    for i in range(k, n+1, k):
+        answer.append(i)
     return answer
