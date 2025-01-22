@@ -1,8 +1,4 @@
 def solution(num_list):
-    a, b = 0, 0
-    for i, num in enumerate(num_list):
-        if i%2==0:
-            a += num
-        else:
-            b += num
+    a = sum(num_list[::2])
+    b = sum(num_list[1::2])
     return max(a, b)
