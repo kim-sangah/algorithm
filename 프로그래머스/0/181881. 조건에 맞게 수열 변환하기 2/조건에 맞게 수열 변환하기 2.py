@@ -1,5 +1,6 @@
 def solution(arr):
-    for x in range(100):
+    x = 0
+    while True:
         new_arr = []
         for i in arr:
             if i >= 50 and i%2 == 0:
@@ -10,4 +11,5 @@ def solution(arr):
                 new_arr.append(i)
         if arr == new_arr:
             return x
+        x += 1
         arr = new_arr
