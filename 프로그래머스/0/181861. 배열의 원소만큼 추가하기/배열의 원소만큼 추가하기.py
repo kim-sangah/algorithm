@@ -1,5 +1,6 @@
 def solution(arr):
     answer = []
     for num in arr:
-        answer += [num]*num
+        for a in range(num):
+            answer += [num]
     return answer
