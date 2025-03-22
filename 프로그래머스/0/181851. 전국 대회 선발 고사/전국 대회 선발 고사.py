@@ -4,7 +4,5 @@ def solution(rank, attendance):
         if attendance[i]:
             rank_list.append(rank[i])
     rank_list.sort()
-    a = rank_list[0]
-    b = rank_list[1]
-    c = rank_list[2]
+    a, b, c = rank_list[:3]
     return rank.index(a)*10000 + rank.index(b)*100 + rank.index(c)
