@@ -1,9 +1,5 @@
 def solution(arr, k):
-    answer = []
     if k%2 == 0:
-        for i in arr:
-            answer.append(i+k)
+        return [i+k for i in arr]
     else:
-        for i in arr:
-            answer.append(i*k)
-    return answer
+        return [i*k for i in arr]
