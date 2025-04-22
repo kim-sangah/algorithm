@@ -2,5 +2,5 @@ def solution(numbers, direction):
     if direction == 'right':
         answer = numbers[-1:] + numbers[:len(numbers)-1]
     else:
-        answer = numbers[1:] + numbers[0:1]
+        answer = numbers[1:] + numbers[:1]
     return answer
