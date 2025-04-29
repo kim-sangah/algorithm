@@ -1,4 +1,3 @@
 def solution(my_string):
-    num = '0123456789'
-    num_list = [int(n) for n in my_string if n in num]
+    num_list = [int(n) for n in my_string if n.isdigit()]
     return sorted(num_list)
