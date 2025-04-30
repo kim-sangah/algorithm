@@ -1,2 +1,2 @@
 def solution(sides):
-    return int(not max(sides) < (sum(sides) - max(sides))) + 1
+    return int(max(sides) >= (sum(sides) - max(sides))) + 1
