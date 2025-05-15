@@ -1,6 +1,6 @@
 def solution(num, k):
-    for i, v in enumerate(str(num)):
+    for i, v in enumerate(str(num), 1):
         if v == str(k):
-            return i+1
+            return i
     
     return -1
