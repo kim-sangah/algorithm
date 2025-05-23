@@ -1,2 +1,3 @@
 def solution(array):
-    return str(array).count('7')
+    a = str(array)
+    return sum(1 for i in a if i == '7')
