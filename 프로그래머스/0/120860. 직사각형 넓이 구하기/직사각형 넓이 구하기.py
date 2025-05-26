@@ -1,7 +1,4 @@
 def solution(dots):
-    x = [x for x, y in dots]
-    y = [y for x, y in dots]
-    
-    width = max(x)-min(x)
-    heigth = max(y)-min(y)
+    width = max(dots)[0] - min(dots)[0]
+    heigth = max(dots)[1]-min(dots)[1]
     return width*heigth
