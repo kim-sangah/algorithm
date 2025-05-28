@@ -1,6 +1,5 @@
 def solution(sides):
-    max_num = max(sides)
-    min_num = min(sides)
-    case1 = [i for i in range(max_num+1) if i + min_num > max_num]
-    case2 = [i for i in range(max_num+min_num) if i < sum(sides) and i > max_num]
+    sides.sort()
+    case1 = [i for i in range(sides[1]) if i + sides[0] > sides[1]]
+    case2 = [i for i in range(sides[1], sum(sides)) if i < sum(sides)]
     return len(case1) + len(case2)
