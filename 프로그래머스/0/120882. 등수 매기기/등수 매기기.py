@@ -1,5 +1,4 @@
 def solution(score):
-    avgs = [(i+j)/2 for i, j in score]
-    ranks = sorted(avgs, reverse = True)
-    answer = [ranks.index(avg) + 1 for avg in avgs]
+    ranks = sorted([sum(i) for i in score], reverse = True)
+    answer = [ranks.index(sum(i)) + 1 for i in score]
     return answer
