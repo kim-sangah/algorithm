@@ -1,4 +1,10 @@
 def solution(score):
-    ranks = sorted([sum(i) for i in score], reverse = True)
-    answer = [ranks.index(sum(i)) + 1 for i in score]
-    return answer
+    sums = [sum(s) for s in score]
+    rank = sorted(sums, reverse=True)
+    
+    rank_dict = {}
+    for i, v in enumerate(rank):
+        if v not in rank_dict:
+            rank_dict[v] = i + 1
+    
+    return [rank_dict[v] for v in sums]
