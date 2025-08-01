@@ -5,8 +5,7 @@ def solution(a, b):
             a, b = b, a % b
         return a
     
-    common = gcd(a, b)
-    b //= common
+    b //= gcd(a, b)
     
     for p in (2, 5):
         while b % p == 0:
