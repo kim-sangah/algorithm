@@ -12,7 +12,7 @@
 ## ✅ programmers 코딩테스트 입문 
 **기간:**  2025.06.12 ~ 2025.08.31  
 
-**링크:**  `https://school.programmers.co.kr/learn/challenges/training`  
+**링크:**  `https://school.programmers.co.kr/learn/challenges/beginner`  
 <img width="45%" alt="코딩테스트 입문 캘린더" src="https://github.com/user-attachments/assets/ce3d54d3-dc9c-4815-8f37-538938ca0c8f" />
 
 
